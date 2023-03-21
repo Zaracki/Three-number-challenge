@@ -44,7 +44,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1, 
-    text: "You got out of the dungeon by solving a hard puzzle. Before you lies three weapons, choose the right one.",
+    text: "You got out of the dungeon by solving a hard puzzle. Before you lies three weapons, choose the right one. Quest: Get to town.",
     options: [
       {
         text: "Rock",
@@ -213,7 +213,7 @@ const textNodes = [
      options: [
       {
         text: "Attack the merchant",
-        nextText: 0
+        nextText: 17
       },
       {
         text: "Walk by",
@@ -221,7 +221,7 @@ const textNodes = [
       },
       {
         text: "Try to steal",
-        nextText: 0
+        nextText: 18
       },
       {
         text: "Trade your scissor for a unknown potion",
@@ -257,22 +257,17 @@ const textNodes = [
      options: [
       {
         text: "Stand you ground",
-        nextText: 0
+        nextText: 19
       },
       {
         text: "Run",
-        nextText: 0
-      },
-      {
-        text: "Try to steal",
-        nextText: 0
+        nextText: 20
       },
       {
         text: "Drink the potion",
         requiredState: (currentState) => currentState.potion,
         setState: {potion: false},
-        
-        nextText: 0
+        nextText: 21
       }
      ] 
    },
@@ -292,6 +287,76 @@ const textNodes = [
      options: [
       {
         text: "Restart",
+        nextText: -1
+      }
+    ] 
+  },
+  {
+    id: 17,
+     text: "The merchant looks at you while you go in for the attack. He mubles and you burst into flames and die.",
+     options: [
+      {
+        text: "Restart",
+        nextText: -1
+      }
+    ] 
+  },
+  {
+    id: 18,
+     text: "You distract the merchant and try to take his glowing potion. The moment you touch it, you can feel your body slowly turn into stone.",
+     options: [
+      {
+        text: "Restart",
+        nextText: -1
+      }
+    ] 
+  },
+  {
+    id: 19,
+     text: "You did your best but was ultimatly bested by the gang of 30 bandits.",
+     options: [
+      {
+        text: "Restart",
+        nextText: -1
+      }
+    ] 
+  },
+  {
+    id: 20,
+     text: "You try to run, but they have horses. (Not doing so well?)",
+     options: [
+      {
+        text: "Restart",
+        nextText: -1
+      }
+    ] 
+  },
+  {
+    id: 21,
+     text: "You drink the potion and turn into a red raging monster. You use your power to kill all the bandits and the effects wears off when you finally reach the town.",
+     options: [
+      {
+        text: "Enter the town",
+        nextText: 22
+      }
+    ] 
+  },
+  {
+    id: 22,
+     text: "You enter the town and are capture by the guards for escaping the dungeon. Quest: Complete!",
+     options: [
+      {
+        text: "Next",
+        nextText: 22
+      }
+    ] 
+  },
+  {
+    id: 66,
+     text: "This is not where you are supposed to go. Just choose RIGHT.",
+     options: [
+      {
+        text: "Restart...",
         nextText: -1
       }
     ] 

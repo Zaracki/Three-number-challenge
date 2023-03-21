@@ -70,7 +70,9 @@ document.getElementById("win-button").onclick = function () {
   let textThree = document.getElementById("text-three").value;
   if (textOne === "red", textTwo === "green", textThree === "blue"){
     document.getElementById("youwin").style.display = "block";
+    document.getElementById("ch1-next-button").style.display = "block";
   } else {
     document.getElementById("youwin").style.display = "none";
+    document.getElementById("ch1-next-button").style.display = "none";
   }
 }

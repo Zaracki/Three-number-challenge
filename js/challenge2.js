@@ -68,7 +68,7 @@ const textNodes = [
     text: "You try to make your way back to town. Which way will you take?",
     options: [
       {
-        text: "Stroll through the forrest",
+        text: "Stroll through the forest",
         nextText: 3
       },
       {
@@ -83,7 +83,7 @@ const textNodes = [
   },
   {
    id: 3,
-    text: "The forrest is full of vines and insects. What do you do?",
+    text: "The forest is full of vines and insects. What do you do?",
     options: [
       {
         text: "Go back to the dungeon",
@@ -177,7 +177,7 @@ const textNodes = [
     text: "You are back trying to figure out which way to take..",
     options: [
       {
-        text: "Stroll through the forrest",
+        text: "Stroll through the forest",
         nextText: 10
       },
       {
@@ -192,7 +192,7 @@ const textNodes = [
   },
   {
     id: 10,
-     text: "The forrest is STILL full of vines and insects. What do you do?",
+     text: "The forest is STILL full of vines and insects. What do you do?",
      options: [
        {
          text: "Try your luck running through the vines",
